@@ -4,8 +4,18 @@
 // Use array.map() method to filter through JSON array and return the models with matching location to a new array of data
 
 const modelFilter = (talentArr, location) => {
-  console.log(talentArr)
-  console.log(location)
+
+  // Make inputs lower case to make function case insensitive
+  const lowerCaseLocation = location.toLowerCase()
+
+  // Use array.map() method to alter each location value in the JSON input array
+  const lowerCaseTalentArr = talentArr.map(model => {
+    model.location = model.location.toLowerCase()
+    return model
+  })
+
+  console.log('New location input is:', lowerCaseLocation)
+  console.log('New talent array input is:', lowerCaseTalentArr)
 
 }
 
