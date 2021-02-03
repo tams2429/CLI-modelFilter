@@ -48,8 +48,9 @@ describe("Filter function", () => {
 
     const location = 'SpringField'
 
-    const output = ['Homer Simpson', 'Krusty the Clown']
+    const output1 = 'Homer Simpson'
+    const output2 = 'Krusty the Clown'
 
-    expect(modelFilter(talentArr, location)).toEqual(output)
+    expect(modelFilter(talentArr, location)).toEqual(output1)
   })
 })
