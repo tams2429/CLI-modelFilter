@@ -38,19 +38,20 @@ describe("Filter function", () => {
         "name": "Diane Nguyen",
         "location": "Los Angeles",
         "date_of_birth": "1980-03-19"
-      },
-      {
-        "name": "Krusty the Clown",
-        "location": "SpringField",
-        "date_of_birth": "1957-10-29"
       }
     ]
 
-    const location = 'SpringField'
+    //Typical location searches
+    const location1 = 'SpringField'
+    const location2 = 'PHILIDELPHIA'
+    const location3 = 'los angeles'
 
     const output1 = 'Homer Simpson'
-    const output2 = 'Krusty the Clown'
+    const output2 = 'Frank Reynolds'
+    const output3 = 'Diane Nguyen'
 
-    expect(modelFilter(talentArr, location)).toEqual(output1)
+    expect(modelFilter(talentArr, location1)).toEqual(output1)
+    expect(modelFilter(talentArr, location2)).toEqual(output2)
+    expect(modelFilter(talentArr, location3)).toEqual(output3)
   })
 })

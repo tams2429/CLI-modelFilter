@@ -29,41 +29,30 @@ const modelFilter = (talentArr, location) => {
 
 //Test inputs
 
-
 const location = 'SpringField'
 
-describe("Filter function", () => {
-  test("it should filter by a search term (link)", () => {
-    const talentArr = [
-      {
-        "name": "Homer Simpson",
-        "location": "Springfield",
-        "date_of_birth": "1956-05-12"
-      },
-      {
-        "name": "Frank Reynolds",
-        "location": "Philidelphia",
-        "date_of_birth": "1944-11-17"
-      },
-      {
-        "name": "Diane Nguyen",
-        "location": "Los Angeles",
-        "date_of_birth": "1980-03-19"
-      },
-      {
-        "name": "Krusty the Clown",
-        "location": "SpringField",
-        "date_of_birth": "1957-10-29"
-      }
-    ]
-
-    const location = 'SpringField'
-
-    const output = ['Homer Simpson', 'Krusty the Clown']
-
-    expect(modelFilter(talentArr, location)).toEqual(output)
-  })
-})
+const talentArr = [
+  {
+    "name": "Homer Simpson",
+    "location": "Springfield",
+    "date_of_birth": "1956-05-12"
+  },
+  {
+    "name": "Frank Reynolds",
+    "location": "Philidelphia",
+    "date_of_birth": "1944-11-17"
+  },
+  {
+    "name": "Diane Nguyen",
+    "location": "Los Angeles",
+    "date_of_birth": "1980-03-19"
+  },
+  {
+    "name": "Krusty the Clown",
+    "location": "SpringField",
+    "date_of_birth": "1957-10-29"
+  }
+]
 
 modelFilter(talentArr, location)
 
