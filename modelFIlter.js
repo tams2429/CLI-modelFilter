@@ -2,6 +2,7 @@
 // Output = Names of Models (string)
 // Case insensitive = convert location string of both inputs to LowerCase
 // Use array.map() method to filter through JSON array and return the models with matching location to a new array of data
+// Return
 
 const modelFilter = (talentArr, location) => {
 
@@ -14,8 +15,15 @@ const modelFilter = (talentArr, location) => {
     return model
   })
 
-  console.log('New location input is:', lowerCaseLocation)
-  console.log('New talent array input is:', lowerCaseTalentArr)
+  // Use array.filter() method to filter and return an array of objects with models that match the search location
+  const filteredModels = lowerCaseTalentArr.filter(model => {
+    return model.location === lowerCaseLocation
+  })
+
+  // Return the names of the models that match the search location
+  for (let i = 0; i < filteredModels.length; i++) {
+    return filteredModels[i].name
+  }
 
 }
 
