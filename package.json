@@ -1,0 +1,22 @@
+{
+  "name": "cli-modelfilter",
+  "version": "1.0.0",
+  "description": "To install dependencies",
+  "main": "modelFIlter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tams2429/CLI-modelFilter.git"
+  },
+  "author": "SKT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tams2429/CLI-modelFilter/issues"
+  },
+  "homepage": "https://github.com/tams2429/CLI-modelFilter#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}

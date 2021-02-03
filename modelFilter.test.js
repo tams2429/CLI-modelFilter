@@ -1,9 +1,3 @@
-// Input 1 = JSON (array of objects), Input 2 = location (string, case insensitive)
-// Output = Names of Models (string)
-// Case insensitive = convert location string of both inputs to LowerCase
-// Use array.map() method to filter through JSON array and return the models with matching location to a new array of data
-// Return
-
 const modelFilter = (talentArr, location) => {
 
   // Make inputs lower case to make function case insensitive
@@ -26,11 +20,6 @@ const modelFilter = (talentArr, location) => {
   }
 
 }
-
-//Test inputs
-
-
-const location = 'SpringField'
 
 describe("Filter function", () => {
   test("it should filter by a search term (link)", () => {
@@ -64,7 +53,3 @@ describe("Filter function", () => {
     expect(modelFilter(talentArr, location)).toEqual(output)
   })
 })
-
-modelFilter(talentArr, location)
-
-
