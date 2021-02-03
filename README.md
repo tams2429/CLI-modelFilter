@@ -27,7 +27,7 @@ This was written in **JavaScript** as this is the language I am **most comfortab
 
 - Next, I **planned** out the **individual steps/logic** required to **return** the **required output**
 
--Along the way, I used **console logs** to help **debug any errors** against expected outputs
+- Along the way, I used **console logs** to help **debug any errors** against expected outputs
 
 ### MVP
 - **GitHub repository** containing **project code**
